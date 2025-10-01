@@ -1,0 +1,31 @@
+:root{
+    --bg:#ffd67c;
+    --card:#ffffff;
+    --acent:#8B5E3C;
+    --acent-2:#D9B99B;
+    --muted:#6b6260;
+    --glass: rgba(255,255,255,0.7);
+}
+.container{
+    background-color: var(--bg);
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+h1{
+    text-align: center;
+}
+#Clasicos-de-la-casa{
+    background-color: #8B5E3C;
+}
+.img-cafes{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+.productos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
