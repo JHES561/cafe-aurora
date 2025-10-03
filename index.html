@@ -3,95 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Aurora</title>
+    <title>Café Aurora</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
 
-            <h1>Cafe Aurora</h1>
-            <ul>
-                <li><a href="#clasicosCasa">Clasicos de la casa</a></li>
-                <li><a href="#Cremosos-Y-Espumosos">Cremosos Y Espongosos</a></li>
-                <li><a href="#Frios">Refrescantes & Frios</a></li>
-            </ul>
-        </header>
+    <header>
+        <h1>Café Aurora</h1>
+        <div class="carrito">🛒</div>
+    </header>
 
-        <main>
+    <nav>
+        <ul>
+            <li><a href="#clasicos-de-la-casa">Menú</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-            <section id="clasicosCasa">
-                <h1>Clasicos de la casa</h1>
-
-                <div class="productos">
-                    <img src="img/TintoAurora.jpg" alt="imagen referencia tinto" class="img-cafes">
-                    <h3>Tinto Aurora</h3>
-                    <p>$3.000</p>
-                    <button>añadir al carrito</button>
-
-                    <div class="productos">
-                        <img src="img/espressoPuro.webp" alt="imagen referencia espresso" class="img-cafes">
-                        <h3>Espresso Puro</h3>
-                        <p>$4.500</p>
-                        <button>añadir al carrito</button>
-                    </div>
-                </div>
-                <div class="productos">
-                <img src="img/americanoSuave.jpg" alt="imagen referencia cafe amaerica" class="img-cafes">
-                <h3>Americano Suave</h3>
-                <p>$5.500</p>
-                <button>añadir al carrito</button>
-                </div>
-            </section>
-
-<!-- siguiente seccion. -->
-            <section id="Cremosos-Y-Espumosos">
-
-                <h1>Cremosos Y Espumosos</h1>
-            <div class="productos">
-                    <img src="img/Latte Aurora.jpg" alt="imagen referencia cafe latte" class="img-cafes">
-                    <h3>Latte Aurora</h3>
-                    <p>$7.500</p>
-                    <button>añadir al carrito</button>
-
-                    <div class="productos">
-                        <img src="img/cappuccino clasico.jpeg" alt="imagen referencia cappuccino" class="img-cafes">
-                        <h3>Cappuccino Clasico</h3>
-                        <p>$8.500</p>
-                        <button>añadir al carrito</button>
-                    </div>
-                </div>
-                <div class="productos">
-                <img src="img/macchiato.webp" alt="imagen referencia cafe macchiato" class="img-cafes">
-                <h3>Macchiato</h3>
-                <p>$6.500</p>
-                <button>añadir al carrito</button>
-            </div>
-            </section>
-  <!-- siguiente seccion -->
-            <section id="Frios">
-                <h1>Frios & Refrescantes</h1>
-                <div class="productos">
-                    <img src="img/Cold Brew Aurora.webp" alt="imagen referencia cafe Cold Brew" class="img-cafes">
-                    <h3>Cold Brew Aurora</h3>
-                    <p>$11.000</p>
-                    <button>añadir al carrito</button>
-
-                    <div class="productos">
-                        <img src="img/Frappé de Cafe.jpg" alt="imagen referencia Frappe de cafe" class="img-cafes">
-                        <h3>Frappé De Café</h3>
-                        <p>$13.000</p>
-                        <button>añadir al carrito</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-
-
-
-        </footer>
+    <main>
+        <!-- Productos -->
+        <!-- Productos -->
+<section id="clasicos-de-la-casa" style="margin-top:30px;">
+    <!-- 🟤 Banner -->
+    <div style="
+        background: url('img/banner-cafe.jpg') center/cover no-repeat;
+        height: 200px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+        margin-bottom: 25px;
+    ">
+        <h2 style="font-size:2em; background: rgba(0,0,0,0.4); padding:10px 20px; border-radius:10px;">
+            Un café, mil momentos
+        </h2>
     </div>
-</body>        
+
+    <!-- 🟤 Tarjetas de productos -->
+    <div class="productos">
+        <div class="producto">
+            <img src="img/TintoAurora.jpg" alt="Tinto Aurora" id="img-cafesid">
+            <h3>Tinto Aurora</h3>
+            <p>$3.000</p>
+            <button class="button">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/espressoPuro.webp" alt="Espresso puro" class="img-cafes">
+            <h3>Espresso Puro</h3>
+            <p>$4.500</p>
+            <button class="button">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/americanoSuave.jpg" alt="Americano Suave" class="img-cafes">
+            <h3>Americano Suave</h3>
+            <p>$5.500</p>
+            <button class="button">Añadir al carrito</button>
+        </div>
+    </div>
+</section>
+
+        <!-- info del cafe aurora -->
+        <section id="nosotros" class="nosotros">
+            <h2>Nosotros</h2>
+            <p>
+               En cada taza, un amanecer lleno de sabor, aroma y momentos que inspiran tu día.
+            </p>
+            <button class="button">Saber más</button>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda? ¡Contáctanos!</p>
+            <p>Tlf: 3117776335</p>
+            <p>Email: jebaenac@ufpso.edu.co</p>
+            <button class="button">Contactar</button>
+        </section>
+    </main>
+
+</body>
 </html>
